@@ -1,7 +1,8 @@
-const contactModel=require("../model/contact");
+const contactModel=require("../Models/contact");
 const addContact=async(req,res,next)=>{
     try {
         const {fullName,phone}=req.body;
+        console.log(req.body);  
         const contact=new contactModel({fullName,phone});
         const addedContact = await contact.save();
         res.status(200).json(addedContact);
@@ -24,17 +25,17 @@ const getContacts=async(req,res,next)=>{
 const updateContact=async(req,res,next)=>{
     try {
         const {id} = req.params;
-        const {fullName,phone}=res.body;
+        const {fullName,phone}=req.body;
         const checkIfContactExists=await contactModel.findById(id);
         if(!checkIfContactExists){
             throw new Error("Contact not found !");
         }
-        updatedContact=await contactModel.findByIdAndUpdate(
+        updated=await contactModel.findByIdAndUpdate(
             id,{
                 $set:{fullName,phone}
             },{new:true}
         );
-    
+        res.status(200).json({updated});
     } catch (error) {
         res.status(500).json({message:error.message});
     }
@@ -42,7 +43,6 @@ const updateContact=async(req,res,next)=>{
 const deleteContact=async(req,res,next)=>{
     try {
         const {id} = req.params;
-        const {fullName,phone}=res.body;
         const checkIfContactExists=await contactModel.findById(id);
         if(!checkIfContactExists){
             throw new Error("Contact not found !");
