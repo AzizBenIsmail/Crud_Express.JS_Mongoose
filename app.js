@@ -8,6 +8,7 @@ const userModel= require('./Models/userModel')
 require("dotenv").config(); //configuration dotenv
 const mongoose = require('mongoose')
 const db = require('./db.json') //configuration json
+const cors = require('cors');
 
 var contactsRouteurs = require('./routes/contacts');
 var indexRouter = require('./routes/index');
@@ -30,6 +31,13 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  methods: 'GET, POST, PUT, DELETE',
+  allowedHeaders: 'Origin, X-Requested-With, Content-Type, Accept, Authorization, Credentials',
+  credentials: true
+}));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

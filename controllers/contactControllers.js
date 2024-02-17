@@ -10,6 +10,23 @@ const addContact=async(req,res,next)=>{
         res.status(500).json({message:error.message});
     }
 };
+const getContactsid = async (req, res, next) => {
+    const { id } = req.params; // Récupérer l'ID de l'URL
+    try {
+        const contact = await contactModel.findById(id); // Rechercher l'utilisateur par son ID
+        if (!contact) {
+            // Si aucun utilisateur n'est trouvé, renvoyer une erreur 404
+            return res.status(404).json({ message: 'User not found' });
+        }
+        // Si l'utilisateur est trouvé, renvoyer l'utilisateur dans la réponse
+        res.status(200).json({ contact });
+    } catch (error) {
+        // En cas d'erreur serveur, renvoyer une erreur 500 avec le message d'erreur
+        res.status(500).json({ message: error.message });
+    }
+};
+
+
 const getContacts=async(req,res,next)=>{
     try {
         const contacts = await contactModel.find();
@@ -58,5 +75,6 @@ module.exports={
     addContact,
     getContacts,
     deleteContact,
-    updateContact
+    updateContact,
+    getContactsid
 }
