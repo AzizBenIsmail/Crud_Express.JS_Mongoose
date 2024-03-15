@@ -13,11 +13,11 @@ const cors = require('cors');
 var contactsRouteurs = require('./routes/contacts');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var carRouter = require('./routes/car');
 const { error } = require('console');
 
 mongoose.set('strictQuery', false);
 mongoose.connect(process.env.URL_MONGO || db.mongo.uri, {
-  useNewUrlParser: true, useUnifiedTopology: true
 }).then(
   ()=>{console.log('connect to BD');}
 ).catch(
@@ -31,7 +31,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-
+app.use(express.static("public"));
 app.use(cors({
   origin: 'http://localhost:3000',
   methods: 'GET, POST, PUT, DELETE',
@@ -42,6 +42,7 @@ app.use(cors({
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/contacts', contactsRouteurs)
+app.use('/car', carRouter)
 
 
 // catch 404 and forward to error handler
