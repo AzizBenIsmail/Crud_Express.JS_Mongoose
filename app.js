@@ -9,6 +9,8 @@ require("dotenv").config(); //configuration dotenv
 const mongoose = require('mongoose')
 const db = require('./db.json') //configuration json
 const cors = require('cors');
+const session = require('express-session');
+
 
 var contactsRouteurs = require('./routes/contacts');
 var indexRouter = require('./routes/index');
@@ -32,6 +34,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static("public"));
+
 app.use(cors({
   origin: 'http://localhost:3000',
   methods: 'GET, POST, PUT, DELETE',
@@ -39,10 +42,20 @@ app.use(cors({
   credentials: true
 }));
 
+app.use(session({
+  secret: 'net StudySphere secret',
+  resave: false,
+  saveUninitialized: true,
+  cookie: {
+    secure: false, // À définir sur true si vous utilisez HTTPS
+    maxAge: 24 * 60 * 60 * 1000, // Durée de validité du cookie de session (en millisecondes)
+  },
+}));
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/contacts', contactsRouteurs)
-app.use('/car', carRouter)
+app.use('/car', carRouter)  
 
 
 // catch 404 and forward to error handler

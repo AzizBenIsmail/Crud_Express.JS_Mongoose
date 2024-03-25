@@ -3,23 +3,23 @@ var router = express.Router();
 const userModel = require("../Models/userModel")
 const Auth = require("../controllers/AuthController");
 const upload = require("../middlewares/uploadImagesUsers");
+const {requireAuthUser} = require("../middlewares/authMiddleware")
+const authLogMiddleware = require("../middlewares/authLogMiddleware")
+const { userValidation } = require("../middlewares/userValidation");
+
 
 /* GET users listing. */
-router.get('/',Auth.getUsers)
-//router.get('/', async function (req, res, next) {
-  // userModel.find({/*filtrage*/},{/*projection*/});
-  // try {
-  //   const userList = await userModel.find();
+router.get('/',requireAuthUser,authLogMiddleware,Auth.getUsers)
 
-  //   if (!userList && userList.length === 0) {
-  //     throw new Error("users not found")
-  //   }
-  //   console.log(userList);
-  //   res.status(200).json(userList);
-  // } catch (error) {
-  //   res.status(500).json({ message: error.message });
-  // }
-//});
+router.get('/getUserAuth',requireAuthUser, Auth.getAuthUser);
+
+router.get('/logout',requireAuthUser,Auth.logout)
+
+router.post('/signupclient',userValidation,Auth.signupclient)
+
+router.post('/login',Auth.login_post)
+
+
 
 /*http://localhost:5000/users/search?name=hamadi*/
 router.get('/search', Auth.searchUsersByName);
@@ -30,34 +30,11 @@ router.get('/SortedUsersByAge', Auth.getSortedUsersByAge);
 /* sort userslist. */
 router.get('/SortedUsersByAgeDes', Auth.getSortedUsersByAgeDes); 
 
-
-
 /* Get Uesrs By ID */
 router.get('/:id',Auth.getUserid)
 
 /* ADD userslist. */
 router.post('/addUser',Auth.addUser)
-//router.post('/', async function (req, res, next) {
-  // try {
-  //   const {
-  //     name,
-  //     age,
-  //     address,
-  //     moy,
-  //   } = req.body;
-  //   //await userModel.create(req.body);
-  //   const user= new userModel({
-  //     name,
-  //     age,
-  //     address,
-  //     moy,
-  //   })
-  //   const adduser = await user.save();
-  //   res.status(200).json(adduser);
-  // } catch (error) {
-  //   res.status(500).json({ message: error.message });
-  // }
-//});
 
 /* ajouter image */
 router.post('/addClient',upload.single("image_user"),Auth.addUserImage)

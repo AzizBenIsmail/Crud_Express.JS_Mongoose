@@ -1,0 +1,40 @@
+2024-03-22T23:36:51.606Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: N/A | nom: N/A 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmRlYzU1NWFkNTc0Yzk3ZTgzOTlmZiIsImlhdCI6MTcxMTEzOTkyNSwiZXhwIjoxNzExMTQ3MTI1fQ.i8yrRnCsFYVQf-B4tzLtcEBCQTV_mnAUSj41tCLOlVY","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"a42ea58f-3906-4a01-8c92-75c4919a6785","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"110","cookie":"connect.sid=s%3A8oRo0pr9DTW7wiViwKovEEbCXoqECzcR.UH7ZoYatUUHGhYyR0NrPCFHcW4ymAHv8w5%2Bwz1LPjz4; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmRlYzU1NWFkNTc0Yzk3ZTgzOTlmZiIsImlhdCI6MTcxMTE0ODQxOCwiZXhwIjoxNzExMTU1NjE4fQ.Lqml2deFADXkFiOUFq6up-t06CaLOtLE6zbOWnKMt38"}
+Execution Time: 1 ms
+Body: {"email":"aziz@gmail.com","password":"123456789","name":"hamady"}
+ - undefined
+2024-03-23T10:41:11.437Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: N/A | nom: N/A 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmRlYzU1NWFkNTc0Yzk3ZTgzOTlmZiIsImlhdCI6MTcxMTEzOTkyNSwiZXhwIjoxNzExMTQ3MTI1fQ.i8yrRnCsFYVQf-B4tzLtcEBCQTV_mnAUSj41tCLOlVY","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"f3528798-f7ba-426a-95df-c5919f4797c9","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"99","cookie":"connect.sid=s%3AUVARA8UzbXck2eaEHvXazviyro3fj1_F.IaGoZBHAWAoNenzD2p2wztD3zB8nVKl3QnE2pGCOl6Q; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k"}
+Execution Time: 0 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation"}
+ - undefined
+2024-03-23T10:43:19.370Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: N/A | nom: N/A 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmRlYzU1NWFkNTc0Yzk3ZTgzOTlmZiIsImlhdCI6MTcxMTEzOTkyNSwiZXhwIjoxNzExMTQ3MTI1fQ.i8yrRnCsFYVQf-B4tzLtcEBCQTV_mnAUSj41tCLOlVY","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"9e562b40-2844-4f67-8035-f66fbff1cd7c","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"99","cookie":"connect.sid=s%3AUVARA8UzbXck2eaEHvXazviyro3fj1_F.IaGoZBHAWAoNenzD2p2wztD3zB8nVKl3QnE2pGCOl6Q; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k"}
+Execution Time: 0 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation"}
+ - undefined
+2024-03-23T10:55:13.165Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: N/A | nom: N/A 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"9b087aaa-3f8c-49df-bab5-4202d4920ddf","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"99","cookie":"connect.sid=s%3A2J-kXxmJebg2G8KY7MuaxZHbUhqcOXJt.ENAwXdPgKly4UrhOtbrR7cBYHITkhCzSysyVBXH72Rc; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k"}
+Execution Time: 0 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation"}
+ - undefined
+2024-03-23T11:37:49.169Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: N/A | nom: N/A 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"17636a89-c4aa-4ec3-9a1d-02d92efdd507","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"120","cookie":"connect.sid=s%3AqVq_Mkb3rto1z_TbnV-YpxAXOD3T7aT1.lEzAtU9fKBBfREyAy0J4IKEMwX4eq9Sd07RbPwwgh7g; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmViZThhY2E5ZWM4MDE5ZTdmYTJiYyIsImlhdCI6MTcxMTE5MzczOCwiZXhwIjoxNzExMjAwOTM4fQ.xoJ5Raei3b3zFCojxSjmwEvb2PDqU8LMzKBBapweR4M"}
+Execution Time: 0 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation","name":"azz"}
+ - undefined
+2024-03-23T11:45:04.101Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: N/A | nom: N/A 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"d3d66721-34c0-4a7f-8935-c8513d51423e","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"120","cookie":"connect.sid=s%3AqVq_Mkb3rto1z_TbnV-YpxAXOD3T7aT1.lEzAtU9fKBBfREyAy0J4IKEMwX4eq9Sd07RbPwwgh7g; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmViZThhY2E5ZWM4MDE5ZTdmYTJiYyIsImlhdCI6MTcxMTE5MzczOCwiZXhwIjoxNzExMjAwOTM4fQ.xoJ5Raei3b3zFCojxSjmwEvb2PDqU8LMzKBBapweR4M"}
+Execution Time: 1 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation","name":"azz"}
+ - undefined
+2024-03-23T11:46:20.177Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: 65fe2102265bbf6f7fab0f50 | nom: hamady 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"82cba258-3676-4acd-b7af-6944b8f4b343","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"120","cookie":"connect.sid=s%3A6YwiN_iTF93RoWuCznrzYrlE8_tdrBPQ.igP1Xr8yzdz2fSPDhPvZX25RVyvRsSQ0i8zeAh4pdUw; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmViZThhY2E5ZWM4MDE5ZTdmYTJiYyIsImlhdCI6MTcxMTE5MzczOCwiZXhwIjoxNzExMjAwOTM4fQ.xoJ5Raei3b3zFCojxSjmwEvb2PDqU8LMzKBBapweR4M"}
+Execution Time: 0 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation","name":"azz"}
+ - undefined
+2024-03-23T11:47:17.884Z - GET - /users/ - ::1 - Referer: N/A - 200 - User_id: 65fe2102265bbf6f7fab0f50 | nom: hamady | role: client 
+Headers: {"content-type":"application/json","authorization":"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmUyMTAyMjY1YmJmNmY3ZmFiMGY1MCIsImlhdCI6MTcxMTE5MDQ1OCwiZXhwIjoxNzExMTk3NjU4fQ.WJz0rxU1wehuQvpFgGJK019gJJnKagy0RwDYUVAs78k","user-agent":"PostmanRuntime/7.37.0","accept":"*/*","postman-token":"e2d8a4be-dd23-4fcd-beaf-2d986ae5354b","host":"localhost:5000","accept-encoding":"gzip, deflate, br","connection":"keep-alive","content-length":"120","cookie":"connect.sid=s%3AOWRodwftEsJ2lqWhk7gOxmWD1CyHG6Vu.4fWZXLl2K5gCFbVIUEttEgPxrfRruMQnSDvTyTBUb%2F0; jwt_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZmViZThhY2E5ZWM4MDE5ZTdmYTJiYyIsImlhdCI6MTcxMTE5MzczOCwiZXhwIjoxNzExMjAwOTM4fQ.xoJ5Raei3b3zFCojxSjmwEvb2PDqU8LMzKBBapweR4M"}
+Execution Time: 1 ms
+Body: {"email":"greencrowd2223@gmail.com","password":"Sam3oulation","name":"azz"}
+ - undefined

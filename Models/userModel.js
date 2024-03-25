@@ -3,16 +3,16 @@ const bcrypt = require('bcrypt')
 const Car = require("./carModel"); // Importez le modèle de voiture
 
 const userSchema = new mongoose.Schema({
-    name: { type: String, default: "" },
+    name: String,
     age: Number,
     moy: Number,
     address: {
         street: String,
         pays: String
     },
-    email: { type: String, required: true, unique: true }, // Rendre le champ email unique
+    email: String,  // Rendre le champ email unique
     password: String,
-    image_user: { type: String, required: true,  },
+    image_user: { type: String, required: false ,  },
     role: {
         type: String,
         enum: ['client', 'centre', 'moderateur', 'admin', 'formateur'],
@@ -43,23 +43,22 @@ userSchema.post('save', function (doc, next) {
   })
   
   //static method to login user
-  /*
   userSchema.statics.login = async function (email, password) {
     const user = await this.findOne({ email })
     if (user) {
       const auth = await bcrypt.compare(password, user.password)
       if (auth) {
-        if (user.etat === true) {
-          return user
-        } else {
+       // if (user.etat === true) { 
+         return user
+        /*} else {
           throw new Error('compte desactive')
-        }
+        }*/
       }
       throw new Error('incorrect password')
     }
     throw Error('incorrect email')
   }
-*/
+
 
 const User = mongoose.model("User", userSchema);
 
